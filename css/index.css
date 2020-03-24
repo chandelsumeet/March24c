@@ -1,0 +1,100 @@
+.img1
+{
+	width: 400px;
+	height: 350px;
+	border-radius: 4px;
+}
+
+.img2
+{
+	width: 100%;
+	height: auto;
+}
+.sec1-tab1,.sec1-tab2,.sec1-tab3
+{
+	display: none;
+	grid-template-columns: repeat(5,auto);
+	grid-template-rows: repeat(5,auto);
+	width: 400px;
+	height: 350px;
+
+}
+.color-white
+{
+	color: white;
+}
+
+
+.bg-gray
+{
+	background-color: #858481;
+}
+
+#sec1-p1:checked ~ .sec1-tab3
+{
+	display: grid;
+
+}
+#sec1-n1:checked ~ .sec1-tab2
+{
+	display: grid;
+
+	
+}
+#sec1-p2:checked ~ .sec1-tab1
+{
+	display: grid;
+
+	
+}
+#sec1-n2:checked ~ .sec1-tab3
+{
+	display: grid;
+
+	
+}
+#sec1-p3:checked ~ .sec1-tab2
+{
+	display: grid;
+
+	
+}
+#sec1-n3:checked ~ .sec1-tab1
+{
+	display: grid;
+
+	
+}
+.item-a
+{
+	grid-column: 1/-1;
+	grid-row: 1/-1;
+}
+.item-b
+{
+	grid-column: 1/1;
+	grid-row: 3/3;
+	z-index: 100;
+}
+.item-c
+{
+	grid-column: 5;
+	grid-row: 3/3;
+	z-index: 100;
+}
+
+
+.sec1-main input
+{
+	display: none;
+}
+.pad1
+{
+	padding: 10px;
+}
+.gridm
+{
+	display: grid;
+	grid-template-columns: repeat(4,auto);
+	grid-template-rows: repeat(8,auto);
+}
